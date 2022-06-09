@@ -1,0 +1,905 @@
+
+
+
+$background-color: #F2ECE7;
+$primary-color: #DB2F19;
+$secondry-color: #E35331;
+$font: 'M PLUS Rounded 1c';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font;
+    text-align: center;
+    background-color: $background-color;
+}
+
+.wrapper{
+    width: 93%;
+    margin: 0 auto;
+}
+
+// Navigation Styles
+header {
+    width: 100%;
+    height: 159.42px;
+    padding-bottom: 250px;
+    background: $background-color;
+    position: relative;
+}
+
+.logo {
+    padding-top: 50px;
+    width: 100px;
+    float: left;
+    text-align: left;
+    line-height: 109.42px;
+    a {
+        text-decoration: none;
+        font-size: 10px;
+        font-family: $font;
+        font-weight: 400;
+        vertical-align: middle;
+    }
+    img{
+        vertical-align: middle;
+    }
+}
+
+
+.leftNav {
+    padding-top: 50px;
+    line-height: 109.42px;
+    margin: 0 auto;
+    padding-left: 180px;
+    a {
+        text-decoration: none;
+        text-align: left;
+        font-family: 'M PLUS Rounded 1c';
+        font-weight: 900;
+        font-size: 20px;
+        color: $primary-color;
+        padding: 0px 22px;
+        margin: 0 1px;
+        float: left;
+        vertical-align: middle;
+        &:hover{
+            color: $primary-color;
+            text-decoration: underline;
+        }
+    }
+}
+
+
+
+.rightNav {
+    padding-top: 35px;
+    line-height: 109.42px;
+    
+    a {
+        text-decoration: none;
+        text-align: center;
+        font-family: $font;
+        //font-size: 20px;
+        color: #000;
+        padding: 0px 10px;
+        margin: 0 auto;
+        font-weight: 500;
+        vertical-align: middle;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.signIn {
+    float: right;
+    vertical-align: middle;
+    margin-top: 0px;
+    margin-right: 10px;
+    background-color: $primary-color;
+    font-family: $font;
+    color: #fff;
+    height: 45px;
+    border: none;
+    width: 12%;
+    border-radius: 25px;
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    p {
+        margin-top: -33px;
+    }
+    &:hover {
+        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.219);
+    }
+}
+
+.HomeContents {
+    height: 1800px;
+    background-color: $background-color;
+    margin-top: 0px;
+    //display: flex;
+}
+
+.HomeCard {
+    height: 886px;
+    width: 1242px;
+    margin: 0 auto;
+    margin-top: 0px;
+    border-radius: 50px;
+    background-image: url(./images/homeBackground.png);
+    h1 {
+        color: #fff;
+        padding-top: 80px;
+        padding-left: 80px;
+        text-align: left;
+        font-size: 50px;
+        font-weight: 700;
+        font-family: "Open Sans";
+    }
+}
+
+.SearchMenu{
+    background-image: url(./images/cardMenu.png);
+    height: 230px;
+    width: 937.69px;
+    margin: 0 50px;
+    margin-top: 50px;
+    border-radius: 25px;
+}
+
+.categories {
+    font-family: 'Open Sans';
+    text-align: left;
+    float: left;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 60px;
+    text-decoration: none;
+    color: #D9D9D9;
+    font-size: medium;
+    font-weight: 800;
+    &:hover {
+        color: #9F9F9F;
+    }
+}
+
+#Rental {
+    color: #000;
+}
+
+.Location {
+    font-family: 'Open Sans';
+    text-align: left;
+    float: left;
+    margin-top: 10px;
+    margin-left: 40px;
+    font-size: medium;
+    font-weight: 900;
+    color: #9F9F9F;
+}
+
+.Labels {
+    font-family: 'Open Sans';
+    text-align: left;
+    float: left;
+    margin-left: 40px;
+    color: #9F9F9F;
+    font-size: smaller;
+    font-weight: 400;
+    .Suburb {
+        padding-left: 15px;
+    }
+    .Rent {
+        padding-left: 25px;
+    }
+    .Rooms {
+        padding-left: 50px;
+    }
+    .Bathrooms {
+        padding-left: 110px;
+    }
+    .PropertyType {
+        padding-left: 15px;
+    }
+    .Office {
+        padding-left: 15px;
+    }
+    .Parking {
+        padding-left: 15px;
+    }
+    .Pets {
+        padding-left: 30px;
+    }
+}
+
+.Menus {
+    font-family: 'Open Sans';
+    text-align: left;
+    float: left;
+    margin-top: 5px;
+    margin-left: 40px;
+    color: #9F9F9F;
+    font-size: smaller;
+    font-weight: 400;
+    select {
+        width:53px;
+        height: 20px;
+        font-size: 8px;
+        border-radius: 0px;
+        border-color: #D9D9D9;
+        box-shadow: 0 0.5px 0.5px 0 rgba(0, 0, 0, 0.143);
+    }
+    #Suburb {
+        margin-left: 8px;
+    }
+    .RentMin {
+        margin-left: 15px;
+    }
+    .RentMax {
+        margin-left: 5px;
+    }
+    .RoomsMin {
+        margin-left: 28px;
+    }
+    .RoomsMax {
+        margin-left: 5px;
+    }
+    #Bathrooms {
+        margin-left: 42px;
+    }
+    #PropertyType {
+        margin-left: 32px;
+    }
+    #Office {
+        margin-left: 47px;
+    }
+    #Parking {
+        margin-left: 39px;
+    }
+    #Pet {
+        margin-left: 23px;
+    }
+
+}
+
+.Amenities {
+    font-family: 'Open Sans';
+    text-align: left;
+    float: left;
+    margin-top: 20px;
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 900;
+    border: none;
+    color: #9F9F9F;
+}
+
+.Supermarkets {
+    font-family: 'Open Sans';
+    text-align: left;
+    float: left;
+    margin-top: 22px;
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 900;
+    border: none;
+    color: #9F9F9F;
+}
+
+.Parks {
+    font-family: 'Open Sans';
+    text-align: left;
+    float: left;
+    margin-top: 22px;
+    margin-left: 50px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 900;
+    border: none;
+    color: #9F9F9F;
+}
+
+.Schools {
+    font-family: 'Open Sans';
+    text-align: left;
+    float: left;
+    margin-top: 22px;
+    margin-left: 50px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 900;
+    border: none;
+    color: #9F9F9F;
+}
+
+.Transport {
+    font-family: 'Open Sans';
+    text-align: left;
+    float: left;
+    margin-top: 22px;
+    margin-left: 50px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 900;
+    border: none;
+    color: #9F9F9F;
+}
+
+.SupermarketsSwitch {
+    float: left;
+    margin-top: 23px;
+    margin-left: 10px;
+}
+
+.ParksSwitch {
+    float: left;
+    margin-top: 23px;
+    margin-left: 10px;
+}
+
+.SchoolsSwitch {
+    float: left;
+    margin-top: 23px;
+    margin-left: 13px;
+}
+
+.TransportSwitch {
+    float: left;
+    margin-top: 23px;
+    margin-left: 13px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 16px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #000;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #000;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
+}
+
+/* Rounded sliders */
+.slider {
+    border-radius: 34px;
+}
+
+.slider:before {
+    border-radius: 50%;
+}
+
+.VirtualView {
+    font-family: 'Open Sans';
+    text-align: left;
+    float: left;
+    margin-top: 22px;
+    margin-left: 50px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 900;
+    border: none;
+    color: #9F9F9F;
+}
+
+.VirtualViewBox {
+    float: left;
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 28px;
+    height: 28px;
+    -webkit-appearance: none;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+}
+
+.SearchButton {
+    float: right;
+    vertical-align: middle;
+    margin-top: -60px;
+    margin-right: 50px;
+    background-color: $primary-color;
+    font-family: $font;
+    color: #fff;
+    height: 60px;
+    border: none;
+    width: 14%;
+    border-radius: 25px;
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    p {
+        margin-top: 10px;
+    }
+    &:hover {
+        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.219);
+    }
+}
+
+.HomeCarousel {
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 80px;
+    img {
+        height: 450px;
+    }
+}
+
+.Resources {
+    height: 700px;
+}
+
+.ResourcesCard {
+    background-image: url(./images/resourcesBox.png);
+    float: left;
+    height: 190px;
+    width: 275px;
+    margin-right: 30px;
+    margin-top: 80px;
+    h2 {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 15px;
+        margin-top: 85px;
+    }
+}
+
+#services {
+    margin-left: 120px;
+}
+
+// Search Page
+.SearchContents {
+    height: 1200px;
+    background-color: $background-color;
+    margin-top: 0px;
+    //display: flex;
+}
+
+.SearchCard {
+    height: 327px;
+    width: 1239px;
+    margin: 0 auto;
+    padding-top: 10px;
+    border-radius: 50px;
+    background-color: #F4CBCB;
+}
+
+.SearchPageMenu {
+    margin-top: -10px;
+}
+
+.ResetButton {
+    float: right;
+    vertical-align: middle;
+    margin-top: -150px;
+    margin-right: 50px;
+    background-color: #DDB2AC;
+    font-family: $font;
+    color: #fff;
+    height: 60px;
+    border: none;
+    width: 14%;
+    border-radius: 25px;
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    p {
+        margin-top: 10px;
+    }
+    &:hover {
+        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.219);
+    }
+}
+
+.Footer {
+    background-color: $primary-color;
+    height: 400px;
+    img {
+        margin-top: 150px;
+        margin-left: 120px;
+        height: 109.42px;
+        width: 100px
+    }
+}
+
+.ResultsNum {
+    margin-left: 100px;
+    margin-top: 100px;
+    font-weight: 600;
+    font-size: larger;
+    color: #5A5A5A;
+}
+
+.SearchMap {
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.SearchResults {
+    float: right;
+    margin-top: 30px;
+    margin-right: 100px;
+    height: 620px;
+    width: 250px;
+}
+
+.PropertyLink {
+    text-decoration: none;
+    color: #000;
+    &:hover {
+        color: #000; 
+    }
+}
+
+.ResultsCard1 {
+    background-color: #fff;
+    width: 250px;
+    height: 200px;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.219);
+    border-radius: 10px;
+}
+.ResultsCard2 {
+    background-color: #fff;
+    width: 250px;
+    height: 200px;
+    margin-top: 10px;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.219);
+    border-radius: 10px;
+}
+
+.ResultsCard3 {
+    background-color: #fff;
+    width: 250px;
+    height: 200px;
+    margin-top: 10px;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.219);
+    border-radius: 10px;
+}
+
+.CardImg1 {
+    width: 250px;
+    height: 134px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.CardImg2 {
+    width: 250px;
+    height: 134px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.CardImg3 {
+    width: 250px;
+    height: 134px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.BedImg {
+    margin-left: 10px;
+    width: 10px;
+    height: 10px;
+}
+
+.BedNum {
+    margin-left: 24px;
+    margin-top: -17px;
+    font-size: x-small;
+}
+
+.BathImg {
+    margin-left: 40px;
+    margin-top: -75px;
+    width: 10px;
+    height: 10px;
+}
+
+.BathNum {
+    margin-left: 55px;
+    margin-top: -54px;
+    font-size: x-small;
+}
+
+.PetImg {
+    margin-left: 70px;
+    margin-top: -75px;
+}
+
+.SearchCardTitle {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: -40px;
+    font-weight: 200;
+}
+
+.SearchCardRent {
+    font-size: 10px;
+    margin-left: 10px;
+    margin-top: -15px;
+    font-weight: 400;
+}
+
+//Property Details Page
+.DetailsContent {
+    height: 2500px;
+    background-color: $background-color;
+    margin-top: 0px;
+    //display: flex;
+}
+
+.DetailsCarousel {
+    width: 820px;
+    padding-top: 0px;
+    margin-left: 130px;
+    img {
+        height: 550px;
+    }
+}
+
+.MoreImages {
+    width: 820px;
+    background-color: $background-color;
+    height: 125px;
+    margin-left: 130px;
+    margin-top: 20px;
+    .DetailsImage1 {
+        height: 125px;
+        width: 125px;
+        margin-right: 14px;
+    }
+    .DetailsImage2 {
+        height: 125px;
+        width: 125px;
+        margin-right: 14px;
+    }
+    .DetailsImage3 {
+        height: 125px;
+        width: 125px;
+        margin-right: 14px;
+    }
+    .DetailsImage4 {
+        height: 125px;
+        width: 125px;
+        margin-right: 14px;
+    }
+    .DetailsImage5 {
+        height: 125px;
+        width: 125px;
+        margin-right: 14px;
+    }
+    .DetailsImage6 {
+        height: 125px;
+        width: 125px;
+    }
+}
+
+.DetailsRightSide {
+    background-color: $background-color;
+    height: 700px;
+    width: 340px;
+    float: right;
+    margin-top: -700px;
+    margin-right: 130px;
+    .SideImage1 {
+        width: 340px;
+        height: 325px;
+    }
+    .SideImage2 {
+        width: 340px;
+        height: 325px;
+        margin-top: 50px;
+    }
+}
+
+.text360 {
+    color: #F2ECE7;
+    margin-top: -210px;
+    font-size: 55px;
+    font-weight: 500;
+    margin-left: 120px;
+}
+
+.PropertyDetails {
+    background-color: $background-color;
+    width: 885px;
+    height: 435px;
+    margin-top: 100px;
+    margin-left: 130px;
+    #PropertyAddress {
+        font-weight: 600;
+        color: #5A5A5A;
+        font-size: 35px;
+    }
+    #PropertyRent {
+        font-weight: 600;
+        color: #000;
+        font-size: 35px;
+        margin-top: 20px;
+    }
+    .DetailsBedImg {
+        margin-top: 20px;
+        width: 33px;
+        height: 33px;
+    }
+    #NumOfBedrooms {
+        margin-top: -33px;
+        margin-left: 45px;
+        font-size: 25px;
+    }
+    .DetailsBathImg {
+        margin-top: -100px;
+        margin-left: 80px;
+        width: 33px;
+        height: 33px;
+    }
+    #NumOfBathrooms {
+        margin-top: -77px;
+        margin-left: 120px;
+        font-size: 25px;
+    }
+
+    .AboutProperty {
+        background-color: $background-color;
+        height: 200px;
+        width: 885px;
+        margin-top: 30px;
+        .AboutLabels {
+            height: 200px;
+            width: 300px;
+            margin-top: 10px;
+        }
+        .AboutDetails {
+            height: 200px;
+            width: 442.5px;
+            margin-top: -200px;
+            margin-left: 320px;
+        }
+    }
+}
+
+#Availability {
+    margin-top: 0px;
+}
+#Tenents {
+    margin-top: 22px;
+}
+#Smoking {
+    margin-top: 22px;
+}
+#Pets {
+    margin-top: 22px;
+}
+
+.AgentDetails {
+    background-color: #F4CBCB;
+    float: right;
+    margin-top: -450px;
+    margin-right: 130px;
+    width: 270px;
+    height: 420px;
+    border-radius: 25px;
+    .AgentImg {
+        width: 170px;
+        height: 170px;
+        margin-top: 30px;
+        margin-left: 50px;
+        border-radius: 25px;
+    }
+    #AgentName {
+        margin-top: 10px;
+        margin-left: 77px;
+        font-size: 25px;
+        font-weight: 300;
+    }
+    .PhoneImg {
+        margin-top: -10px;
+        margin-left: 30px;
+    }
+    #PhoneNum {
+        margin-top: -25px;
+        margin-left: 60px;
+        font-size: 12px;
+    }
+    .EmailImg {
+        margin-top: 0px;
+        margin-left: 30px;
+    }
+    #EmailAddress {
+        margin-top: -20px;
+        margin-left: 60px;
+        font-size: 12px;
+    }
+    .BookingButton {
+        background-color: $secondry-color;
+        height: 50px;
+        width: 210px;
+        margin-left: 30px;
+        border: none;
+        border-radius: 25px;
+        margin-top: 10px;
+        p {
+            color: #fff;
+            margin-top: 12px;
+        }
+        &:hover {
+            box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.219);
+        }
+    }
+}
+
+.PropertyDescription {
+    background-color: $background-color;
+    width: 885px;
+    height: 435px;
+    margin-left: 130px;
+}
+
+.PropertyMap {
+    margin-left: 130px;
+}
+
+/*
+.title{
+    padding-top: 10px;
+}
+#display {
+    text-align: left;
+}
+
+.googleMap {
+    width:100%;
+    height:400px;
+}
+*/
+
+
